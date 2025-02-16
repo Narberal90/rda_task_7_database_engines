@@ -9,7 +9,8 @@ CREATE TABLE GeoIPCache (
     IPRange VARCHAR(50),
     CountryID INT,
     PRIMARY KEY (ID)
-) ENGINE = MYISAM;
+) ENGINE = MEMORY;
+
 
 CREATE TABLE ProductDescription (
     ID INT AUTO_INCREMENT,
@@ -17,7 +18,7 @@ CREATE TABLE ProductDescription (
     ProductID INT,
     CountryID INT,
     PRIMARY KEY (ID)
-) ENGINE = InnoDB;
+) ENGINE = MyISAM;
 
 CREATE TABLE Logs (
     ID INT AUTO_INCREMENT,

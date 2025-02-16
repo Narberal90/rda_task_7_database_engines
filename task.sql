@@ -7,10 +7,10 @@ CREATE TABLE Countries (ID INT, Name VARCHAR(50), PRIMARY KEY (ID)) ENGINE = Inn
 
 -- Create a table for caching GeoIP data (Columns: ID, IP Range, CountryID)
 CREATE TABLE GeoIPCache (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
+    ID INT AUTO_INCREMENT ,
     IPRange VARCHAR(50),
     CountryID INT,
-) ENGINE = MEMORY;
+) ENGINE = MYISAM;
 
 CREATE TABLE ProductDescription (
     ID INT PRIMARY KEY AUTO_INCREMENT,

@@ -2,12 +2,10 @@ CREATE DATABASE ShopDB;
 
 USE ShopDB;
 
--- Create a table to store countries 
 CREATE TABLE Countries (ID INT, Name VARCHAR(50), PRIMARY KEY (ID)) ENGINE = InnoDB;
 
--- Create a table for caching GeoIP data (Columns: ID, IP Range, CountryID)
 CREATE TABLE GeoIPCache (
-    ID INT AUTO_INCREMENT ,
+    ID INT AUTO_INCREMENT,
     IPRange VARCHAR(50),
     CountryID INT,
 ) ENGINE = MYISAM;
